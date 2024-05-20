@@ -10,46 +10,46 @@ This project introduces an innovative approach in the field of motion stabilizat
 #### Controller Model
 The PID controller is a fundamental component employed inside control systems. The primary objective is to efficiently govern and maintain optimal setpoints by employing three control actions: Proportional (P), Integral (I), and Derivative (D). The transfer function for the controller is given by:
 
-\[ C(s) = K_P + sK_D + \frac{K_I}{s} \]
+$C(s) = K_P + sK_D + \frac{K_I}{s}$
 
 Where:
-- \( K_P \): Proportional Gain
-- \( K_I \): Integral Gain
-- \( K_D \): Derivative Gain
+- $( K_P )$: Proportional Gain
+- $( K_I )$: Integral Gain
+- $( K_D )$: Derivative Gain
 
 #### Actuator Model
 The actuator transfer function is given by:
 
-\[ T(s) = \frac{K_t(N2/N1)}{s\{(Js+D)(sLa+Ra) + K_t^2\}} \]
+$T(s) = \frac{K_t(N2/N1)}{s\{(Js+D)(sLa+Ra) + K_t^2\}}$
 
 Where:
-- \( K_t \): Motor Torque Constant
-- \( J \): Moment of Inertia
-- \( s \): Laplace variable
-- \( D \): Damping or friction in the system
-- \( La \): Motor inductance
-- \( Ra \): Motor resistance
-- \( N2/N1 \): Gear ratio
+- $( K_t )$: Motor Torque Constant
+- $( J )$: Moment of Inertia
+- $( s )$: Laplace variable
+- $( D )$: Damping or friction in the system
+- $( La )$: Motor inductance
+- $( Ra )$: Motor resistance
+- $( N2/N1 )$: Gear ratio
 
 #### Model of Plant
 The moment of inertia of the plant is given by:
 
-\[ J = \frac{1}{12} \cdot m \cdot (a^2 + b^2) \]
+$J = \frac{1}{12} \cdot m \cdot (a^2 + b^2)$
 
 Where:
-- \( J \): Moment of Inertia
-- \( m \): Mass of the sheet
-- \( a \): Length of one side of the sheet
-- \( b \): Length of the other side of the sheet
+- $( J )$: Moment of Inertia
+- $( m )$: Mass of the sheet
+- $( a )$: Length of one side of the sheet
+- $( b )$: Length of the other side of the sheet
 
 #### Model of Gyroscopic Sensor
 The gyroscopic sensor model is represented as a second-order transfer function:
 
-\[ G_g(s) = \frac{\omega_n^2}{s^2 + 2\zeta \omega_n s + \omega_n^2} \]
+$G_g(s) = \frac{\omega_n^2}{s^2 + 2\zeta \omega_n s + \omega_n^2}$
 
 Where:
-- \( \zeta \): Damping ratio of the gyroscope
-- \( \omega_n \): Natural frequency of the gyroscope
+- $( \zeta )$: Damping ratio of the gyroscope
+- $( \omega_n )$: Natural frequency of the gyroscope
 
 ### Model Validation
 Model validation is performed using Simulink block diagrams and output graphs for motor, plant, and gyroscope models.
