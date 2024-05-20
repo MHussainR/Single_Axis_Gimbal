@@ -70,4 +70,4 @@ A wooden frame was created for the single axis. An ESP 32 was used as a controll
 This project developed a reliable and automated single-axis gimbal system enhancing precision in motion stabilization. Despite certain limitations, the primary aim of developing a stable platform was achieved.
 
 ## References
-Refer to the detailed report for a comprehensive list of references.
+Refer to the detailed [Report](Report.pdf) for a comprehensive list of references.
